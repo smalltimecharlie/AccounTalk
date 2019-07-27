@@ -1,0 +1,46 @@
+{
+  "accounTalkApp": {
+    "client": {
+      "home": {
+        "title": "Clients",
+        "createLabel": "Create a new Client",
+        "createOrEditLabel": "Create or edit a Client",
+        "notFound": "No Client found"
+      },
+      "created": "A new Client is created with identifier {{ param }}",
+      "updated": "A Client is updated with identifier {{ param }}",
+      "deleted": "A Client is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Client {{ id }}?"
+      },
+      "detail": {
+        "title": "Client"
+      },
+      "title": "Title",
+      "forename": "Forename",
+      "surname": "Surname",
+      "dateOfBirth": "Date Of Birth",
+      "phoneNumber": "Phone Number",
+      "email": "Email",
+      "selfAssesmentUtrNo": "Self Assesment Utr No",
+      "nationality": "Nationality",
+      "gender": "Gender",
+      "studentLoan": "Student Loan",
+      "childBenefit": "Child Benefit",
+      "spouse": "Spouse",
+      "findOutAboutUs": "Find Out About Us",
+      "additionalInformation": "Additional Information",
+      "address": "Address",
+      "business": "Business",
+      "previousAccountant": "Previous Accountant",
+      "taxReturn": "Tax Return",
+      "bankDetails": "Bank Details",
+      "shares": "Shares",
+      "pensionProvider": "Pension Provider",
+      "employment": "Employment",
+      "help": {
+        "title": "Clients."
+      }
+    }
+  }
+}

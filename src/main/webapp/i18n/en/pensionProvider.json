@@ -1,0 +1,25 @@
+{
+  "accounTalkApp": {
+    "pensionProvider": {
+      "home": {
+        "title": "Pension Providers",
+        "createLabel": "Create a new Pension Provider",
+        "createOrEditLabel": "Create or edit a Pension Provider",
+        "notFound": "No Pension Provider found"
+      },
+      "created": "A new Pension Provider is created with identifier {{ param }}",
+      "updated": "A Pension Provider is updated with identifier {{ param }}",
+      "deleted": "A Pension Provider is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Pension Provider {{ id }}?"
+      },
+      "detail": {
+        "title": "Pension Provider"
+      },
+      "nameOfProvider": "Name Of Provider",
+      "membershipNumber": "Membership Number",
+      "payeReference": "Paye Reference",
+      "client": "Client"
+    }
+  }
+}

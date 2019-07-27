@@ -1,0 +1,23 @@
+{
+  "accounTalkApp": {
+    "statePensionReceived": {
+      "home": {
+        "title": "State Pension Receiveds",
+        "createLabel": "Create a new State Pension Received",
+        "createOrEditLabel": "Create or edit a State Pension Received",
+        "notFound": "No State Pension Received found"
+      },
+      "created": "A new State Pension Received is created with identifier {{ param }}",
+      "updated": "A State Pension Received is updated with identifier {{ param }}",
+      "deleted": "A State Pension Received is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete State Pension Received {{ id }}?"
+      },
+      "detail": {
+        "title": "State Pension Received"
+      },
+      "grossPensionReceived": "Gross Pension Received",
+      "taxDeducted": "Tax Deducted"
+    }
+  }
+}

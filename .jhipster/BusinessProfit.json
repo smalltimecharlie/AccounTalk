@@ -1,0 +1,50 @@
+{
+    "name": "BusinessProfit",
+    "fields": [
+        {
+            "fieldName": "turnover",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "expenses",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "capitalAllowances",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "profit",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "cisTaxDeducted",
+            "fieldType": "Double"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "taxReturn",
+            "otherEntityName": "taxReturn",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "business",
+            "otherEntityRelationshipName": "businessProfit",
+            "relationshipName": "business",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20190727223305",
+    "entityTableName": "business_profit",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,10 @@
+{
+  "accounTalkApp": {
+    "BusinessType": {
+      "null": "",
+      "SOLE_TRADE": "SOLE_TRADE",
+      "PARTNERSHIP": "PARTNERSHIP",
+      "RENTAL_PROPERTY": "RENTAL_PROPERTY"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+    "name": "StatePensionReceived",
+    "fields": [
+        {
+            "fieldName": "grossPensionReceived",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "taxDeducted",
+            "fieldType": "Double"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190727223258",
+    "entityTableName": "state_pension_received",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

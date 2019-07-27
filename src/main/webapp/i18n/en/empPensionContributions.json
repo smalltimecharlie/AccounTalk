@@ -1,0 +1,23 @@
+{
+  "accounTalkApp": {
+    "empPensionContributions": {
+      "home": {
+        "title": "Emp Pension Contributions",
+        "createLabel": "Create a new Emp Pension Contributions",
+        "createOrEditLabel": "Create or edit a Emp Pension Contributions",
+        "notFound": "No Emp Pension Contributions found"
+      },
+      "created": "A new Emp Pension Contributions is created with identifier {{ param }}",
+      "updated": "A Emp Pension Contributions is updated with identifier {{ param }}",
+      "deleted": "A Emp Pension Contributions is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Emp Pension Contributions {{ id }}?"
+      },
+      "detail": {
+        "title": "Emp Pension Contributions"
+      },
+      "amountPaid": "Amount Paid",
+      "employmentDetails": "Employment Details"
+    }
+  }
+}

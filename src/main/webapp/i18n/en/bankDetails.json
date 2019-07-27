@@ -1,0 +1,30 @@
+{
+  "accounTalkApp": {
+    "bankDetails": {
+      "home": {
+        "title": "Bank Details",
+        "createLabel": "Create a new Bank Details",
+        "createOrEditLabel": "Create or edit a Bank Details",
+        "notFound": "No Bank Details found"
+      },
+      "created": "A new Bank Details is created with identifier {{ param }}",
+      "updated": "A Bank Details is updated with identifier {{ param }}",
+      "deleted": "A Bank Details is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Bank Details {{ id }}?"
+      },
+      "detail": {
+        "title": "Bank Details"
+      },
+      "accountHolderName": "Account Holder Name",
+      "accountNumber": "Account Number",
+      "sortCode": "Sort Code",
+      "jointAccount": "Joint Account",
+      "bankName": "Bank Name",
+      "openingDate": "Opening Date",
+      "closedDate": "Closed Date",
+      "taxReturn": "Tax Return",
+      "client": "Client"
+    }
+  }
+}

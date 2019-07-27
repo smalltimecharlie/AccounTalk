@@ -1,0 +1,26 @@
+{
+  "accounTalkApp": {
+    "previousAccountant": {
+      "home": {
+        "title": "Previous Accountants",
+        "createLabel": "Create a new Previous Accountant",
+        "createOrEditLabel": "Create or edit a Previous Accountant",
+        "notFound": "No Previous Accountant found"
+      },
+      "created": "A new Previous Accountant is created with identifier {{ param }}",
+      "updated": "A Previous Accountant is updated with identifier {{ param }}",
+      "deleted": "A Previous Accountant is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Previous Accountant {{ id }}?"
+      },
+      "detail": {
+        "title": "Previous Accountant"
+      },
+      "name": "Name",
+      "email": "Email",
+      "phoneNumber": "Phone Number",
+      "client": "Client",
+      "address": "Address"
+    }
+  }
+}

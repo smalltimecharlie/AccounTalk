@@ -1,0 +1,143 @@
+{
+    "name": "Client",
+    "fields": [
+        {
+            "fieldName": "title",
+            "javadoc": "Clients.",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "forename",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "surname",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "dateOfBirth",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "phoneNumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "email",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "selfAssesmentUtrNo",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "minlength",
+                "maxlength"
+            ],
+            "fieldValidateRulesMinlength": 10,
+            "fieldValidateRulesMaxlength": 10
+        },
+        {
+            "fieldName": "nationality",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "gender",
+            "fieldType": "Gender",
+            "fieldValues": "MALE,FEMALE,OTHER"
+        },
+        {
+            "fieldName": "studentLoan",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "childBenefit",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "spouse",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "findOutAboutUs",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "additionalInformation",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "address",
+            "otherEntityRelationshipName": "client",
+            "relationshipName": "address"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "business",
+            "otherEntityRelationshipName": "client",
+            "relationshipName": "business"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "previousAccountant",
+            "otherEntityRelationshipName": "client",
+            "relationshipName": "previousAccountant"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "taxReturn",
+            "otherEntityRelationshipName": "client",
+            "relationshipName": "taxReturn"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "bankDetails",
+            "otherEntityRelationshipName": "client",
+            "relationshipName": "bankDetails"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "shares",
+            "otherEntityRelationshipName": "client",
+            "relationshipName": "shares"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "pensionProvider",
+            "otherEntityRelationshipName": "client",
+            "relationshipName": "pensionProvider"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "employment",
+            "otherEntityRelationshipName": "client",
+            "relationshipName": "employment"
+        }
+    ],
+    "changelogDate": "20190727223248",
+    "entityTableName": "client",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

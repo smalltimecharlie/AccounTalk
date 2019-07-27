@@ -1,0 +1,24 @@
+{
+  "accounTalkApp": {
+    "perPensionContributions": {
+      "home": {
+        "title": "Per Pension Contributions",
+        "createLabel": "Create a new Per Pension Contributions",
+        "createOrEditLabel": "Create or edit a Per Pension Contributions",
+        "notFound": "No Per Pension Contributions found"
+      },
+      "created": "A new Per Pension Contributions is created with identifier {{ param }}",
+      "updated": "A Per Pension Contributions is updated with identifier {{ param }}",
+      "deleted": "A Per Pension Contributions is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Per Pension Contributions {{ id }}?"
+      },
+      "detail": {
+        "title": "Per Pension Contributions"
+      },
+      "netAmountPaid": "Net Amount Paid",
+      "taxReturn": "Tax Return",
+      "pensionProvider": "Pension Provider"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+    "name": "Earnings",
+    "fields": [
+        {
+            "fieldName": "grossPay",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "taxDeducted",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "studentLoanDeductions",
+            "fieldType": "Double"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "employmentDetails",
+            "otherEntityName": "employmentDetails",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190727223306",
+    "entityTableName": "earnings",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

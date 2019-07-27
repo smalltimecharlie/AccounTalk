@@ -1,0 +1,96 @@
+{
+    "name": "TaxReturn",
+    "fields": [
+        {
+            "fieldName": "year",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "studentLoan",
+            "fieldType": "StudentLoan",
+            "fieldValues": "NONE,PLAN1,PLAN2"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "bankDetails",
+            "otherEntityRelationshipName": "taxReturn",
+            "relationshipName": "bankRefundDetails",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "statePensionReceived",
+            "otherEntityRelationshipName": "taxReturn",
+            "relationshipName": "statePensionDetails",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "pensionReceived",
+            "otherEntityRelationshipName": "taxReturn",
+            "relationshipName": "pensionReceived"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "perPensionContributions",
+            "otherEntityRelationshipName": "taxReturn",
+            "relationshipName": "personalPensionContributions"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "giftAidDonations",
+            "otherEntityRelationshipName": "taxReturn",
+            "relationshipName": "giftAidDonations"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "bankInterest",
+            "otherEntityRelationshipName": "taxReturn",
+            "relationshipName": "bankInterest"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "dividendsReceived",
+            "otherEntityRelationshipName": "taxReturn",
+            "relationshipName": "dividendsReceived"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "employmentDetails",
+            "otherEntityRelationshipName": "taxReturn",
+            "relationshipName": "employmentDetails"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "eisInvestments",
+            "otherEntityRelationshipName": "taxReturn",
+            "relationshipName": "eisInvestments"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "businessProfit",
+            "otherEntityRelationshipName": "taxReturn",
+            "relationshipName": "businessProfit"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "client",
+            "otherEntityRelationshipName": "taxReturn",
+            "relationshipName": "client",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190727223253",
+    "entityTableName": "tax_return",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

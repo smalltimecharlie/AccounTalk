@@ -1,0 +1,35 @@
+{
+    "name": "Expenses",
+    "fields": [
+        {
+            "fieldName": "expenseType",
+            "fieldType": "ExpenseType",
+            "fieldValues": "UNSPECIFIED,SUBSCRIPTIONS,MOTOR_EXPENSE_IN_OWN_CAR"
+        },
+        {
+            "fieldName": "description",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "value",
+            "fieldType": "Double"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "employmentDetails",
+            "otherEntityName": "employmentDetails",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190727223308",
+    "entityTableName": "expenses",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

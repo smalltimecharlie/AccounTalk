@@ -1,0 +1,25 @@
+{
+  "accounTalkApp": {
+    "eisInvestments": {
+      "home": {
+        "title": "Eis Investments",
+        "createLabel": "Create a new Eis Investments",
+        "createOrEditLabel": "Create or edit a Eis Investments",
+        "notFound": "No Eis Investments found"
+      },
+      "created": "A new Eis Investments is created with identifier {{ param }}",
+      "updated": "A Eis Investments is updated with identifier {{ param }}",
+      "deleted": "A Eis Investments is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Eis Investments {{ id }}?"
+      },
+      "detail": {
+        "title": "Eis Investments"
+      },
+      "investmentScheme": "Investment Scheme",
+      "dateInvested": "Date Invested",
+      "amountPaid": "Amount Paid",
+      "taxReturn": "Tax Return"
+    }
+  }
+}
