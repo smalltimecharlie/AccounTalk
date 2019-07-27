@@ -1,0 +1,25 @@
+{
+  "accounTalkApp": {
+    "pensionReceived": {
+      "home": {
+        "title": "Pension Receiveds",
+        "createLabel": "Create a new Pension Received",
+        "createOrEditLabel": "Create or edit a Pension Received",
+        "notFound": "No Pension Received found"
+      },
+      "created": "A new Pension Received is created with identifier {{ param }}",
+      "updated": "A Pension Received is updated with identifier {{ param }}",
+      "deleted": "A Pension Received is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Pension Received {{ id }}?"
+      },
+      "detail": {
+        "title": "Pension Received"
+      },
+      "grossPensionReceived": "Gross Pension Received",
+      "taxDeducted": "Tax Deducted",
+      "taxReturn": "Tax Return",
+      "pensionProvider": "Pension Provider"
+    }
+  }
+}

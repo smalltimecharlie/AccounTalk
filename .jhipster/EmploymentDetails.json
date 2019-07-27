@@ -1,0 +1,53 @@
+{
+    "name": "EmploymentDetails",
+    "fields": [],
+    "relationships": [
+        {
+            "relationshipName": "taxReturn",
+            "otherEntityName": "taxReturn",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "employment",
+            "otherEntityRelationshipName": "employmentDetails",
+            "relationshipName": "employment",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "earnings",
+            "otherEntityRelationshipName": "employmentDetails",
+            "relationshipName": "earnings"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "benefits",
+            "otherEntityRelationshipName": "employmentDetails",
+            "relationshipName": "benefits"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "expenses",
+            "otherEntityRelationshipName": "employmentDetails",
+            "relationshipName": "expenses"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "empPensionContributions",
+            "otherEntityRelationshipName": "employmentDetails",
+            "relationshipName": "employmentPensionContributions"
+        }
+    ],
+    "changelogDate": "20190727223304",
+    "entityTableName": "employment_details",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

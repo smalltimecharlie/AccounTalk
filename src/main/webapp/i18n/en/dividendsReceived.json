@@ -1,0 +1,25 @@
+{
+  "accounTalkApp": {
+    "dividendsReceived": {
+      "home": {
+        "title": "Dividends Receiveds",
+        "createLabel": "Create a new Dividends Received",
+        "createOrEditLabel": "Create or edit a Dividends Received",
+        "notFound": "No Dividends Received found"
+      },
+      "created": "A new Dividends Received is created with identifier {{ param }}",
+      "updated": "A Dividends Received is updated with identifier {{ param }}",
+      "deleted": "A Dividends Received is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Dividends Received {{ id }}?"
+      },
+      "detail": {
+        "title": "Dividends Received"
+      },
+      "paymentDate": "Payment Date",
+      "amountReceived": "Amount Received",
+      "taxReturn": "Tax Return",
+      "shares": "Shares"
+    }
+  }
+}

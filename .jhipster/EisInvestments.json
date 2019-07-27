@@ -1,0 +1,35 @@
+{
+    "name": "EisInvestments",
+    "fields": [
+        {
+            "fieldName": "investmentScheme",
+            "fieldType": "InvestmentScheme",
+            "fieldValues": "EIS,SEIS"
+        },
+        {
+            "fieldName": "dateInvested",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "amountPaid",
+            "fieldType": "Double"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "taxReturn",
+            "otherEntityName": "taxReturn",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190727223309",
+    "entityTableName": "eis_investments",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

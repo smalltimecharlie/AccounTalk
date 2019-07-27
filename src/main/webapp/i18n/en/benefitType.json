@@ -1,0 +1,13 @@
+{
+  "accounTalkApp": {
+    "BenefitType": {
+      "null": "",
+      "UNSPECIFIED": "UNSPECIFIED",
+      "COMPANY_VAN": "COMPANY_VAN",
+      "FUEL_VAN": "FUEL_VAN",
+      "PRIVATE_MEDICAL_DENTAL_INSURANCE": "PRIVATE_MEDICAL_DENTAL_INSURANCE",
+      "COMPANY_CAR": "COMPANY_CAR",
+      "FUEL_CAR": "FUEL_CAR"
+    }
+  }
+}

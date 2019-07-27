@@ -1,0 +1,26 @@
+{
+    "name": "EmpPensionContributions",
+    "fields": [
+        {
+            "fieldName": "amountPaid",
+            "fieldType": "Double"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "employmentDetails",
+            "otherEntityName": "employmentDetails",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190727223303",
+    "entityTableName": "emp_pension_contributions",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

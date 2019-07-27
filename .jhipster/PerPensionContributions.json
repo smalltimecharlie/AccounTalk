@@ -1,0 +1,34 @@
+{
+    "name": "PerPensionContributions",
+    "fields": [
+        {
+            "fieldName": "netAmountPaid",
+            "fieldType": "Double"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "taxReturn",
+            "otherEntityName": "taxReturn",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "pensionProvider",
+            "otherEntityRelationshipName": "perPensionContributions",
+            "relationshipName": "pensionProvider",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20190727223257",
+    "entityTableName": "per_pension_contributions",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

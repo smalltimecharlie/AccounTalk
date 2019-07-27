@@ -1,0 +1,34 @@
+{
+  "accounTalkApp": {
+    "taxReturn": {
+      "home": {
+        "title": "Tax Returns",
+        "createLabel": "Create a new Tax Return",
+        "createOrEditLabel": "Create or edit a Tax Return",
+        "notFound": "No Tax Return found"
+      },
+      "created": "A new Tax Return is created with identifier {{ param }}",
+      "updated": "A Tax Return is updated with identifier {{ param }}",
+      "deleted": "A Tax Return is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Tax Return {{ id }}?"
+      },
+      "detail": {
+        "title": "Tax Return"
+      },
+      "year": "Year",
+      "studentLoan": "Student Loan",
+      "bankRefundDetails": "Bank Refund Details",
+      "statePensionDetails": "State Pension Details",
+      "pensionReceived": "Pension Received",
+      "personalPensionContributions": "Personal Pension Contributions",
+      "giftAidDonations": "Gift Aid Donations",
+      "bankInterest": "Bank Interest",
+      "dividendsReceived": "Dividends Received",
+      "employmentDetails": "Employment Details",
+      "eisInvestments": "Eis Investments",
+      "businessProfit": "Business Profit",
+      "client": "Client"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+    "name": "PensionReceived",
+    "fields": [
+        {
+            "fieldName": "grossPensionReceived",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "taxDeducted",
+            "fieldType": "Double"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "taxReturn",
+            "otherEntityName": "taxReturn",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "pensionProvider",
+            "otherEntityRelationshipName": "pensionReceived",
+            "relationshipName": "pensionProvider",
+            "otherEntityField": "id",
+            "ownerSide": true
+        }
+    ],
+    "changelogDate": "20190727223255",
+    "entityTableName": "pension_received",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

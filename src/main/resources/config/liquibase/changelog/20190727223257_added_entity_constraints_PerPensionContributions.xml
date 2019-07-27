@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity PerPensionContributions.
+    -->
+    <changeSet id="20190727223257-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="tax_return_id"
+                                 baseTableName="per_pension_contributions"
+                                 constraintName="fk_per_pension_contributions_tax_return_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tax_return"/>
+
+        <addForeignKeyConstraint baseColumnNames="pension_provider_id"
+                                 baseTableName="per_pension_contributions"
+                                 constraintName="fk_per_pension_contributions_pension_provider_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="pension_provider"/>
+
+    </changeSet>
+</databaseChangeLog>

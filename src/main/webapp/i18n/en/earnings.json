@@ -1,0 +1,25 @@
+{
+  "accounTalkApp": {
+    "earnings": {
+      "home": {
+        "title": "Earnings",
+        "createLabel": "Create a new Earnings",
+        "createOrEditLabel": "Create or edit a Earnings",
+        "notFound": "No Earnings found"
+      },
+      "created": "A new Earnings is created with identifier {{ param }}",
+      "updated": "A Earnings is updated with identifier {{ param }}",
+      "deleted": "A Earnings is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Earnings {{ id }}?"
+      },
+      "detail": {
+        "title": "Earnings"
+      },
+      "grossPay": "Gross Pay",
+      "taxDeducted": "Tax Deducted",
+      "studentLoanDeductions": "Student Loan Deductions",
+      "employmentDetails": "Employment Details"
+    }
+  }
+}

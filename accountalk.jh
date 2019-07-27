@@ -1,0 +1,210 @@
+entity Client {
+	/**
+	* Clients.
+	*/
+	title String required,
+    forename String required,
+	surname String required,
+    /*dd/mm/yyyy*/
+	dateOfBirth String required,
+    /*Drop down*/
+    phoneNumber String,
+    email String required ,
+    selfAssesmentUtrNo String minlength(10) maxlength(10),
+    nationality String,
+    gender Gender,
+    studentLoan Boolean,
+    childBenefit Boolean,
+    spouse Boolean,
+    findOutAboutUs String,
+    additionalInformation String
+    }
+
+entity Address {
+    address1 String,
+    address2 String,
+    address3 String,
+    town String,
+    county String,
+    country String,
+    postcode String maxlength(10)  
+}
+entity Employment {
+	businessName String,
+    payeReference String,
+    employmentEndDate Instant
+}
+
+entity PreviousAccountant {
+	name String,
+    email String,
+    phoneNumber String
+}
+
+enum Gender {
+	MALE, FEMALE, OTHER
+  }
+
+entity Business {
+	businessName String,
+    businessDescription String,
+    businessType BusinessType
+}
+
+enum BusinessType{
+	SOLE_TRADE, PARTNERSHIP, RENTAL_PROPERTY
+}
+
+entity TaxReturn {
+	year Instant,
+    studentLoan StudentLoan
+}
+
+entity PensionProvider{
+	nameOfProvider String,
+    membershipNumber String,
+    payeReference String
+}
+
+entity PensionReceived{
+	grossPensionReceived Double,
+	taxDeducted Double
+}
+
+/*look at saving and opening these these */
+entity BankInterest{
+	netInterest Double,
+	taxDeducted Double 
+}
+
+entity PerPensionContributions{
+    netAmountPaid Double
+    }
+    
+entity StatePensionReceived{
+	grossPensionReceived Double,
+    taxDeducted Double
+}
+    
+entity GiftAidDonations{
+	charityName String,
+	donationDate Instant,
+	donationAmount Double,
+	giftAidClaimed Boolean
+    }
+
+/* option for default bank */
+entity BankDetails{
+	accountHolderName String,
+	accountNumber String,
+	sortCode String,
+    jointAccount Boolean,
+	bankName String,
+    openingDate Instant,
+    closedDate Instant
+    }
+    
+entity DividendsReceived{	
+	paymentDate Instant,
+	amountReceived Double
+}
+
+entity Shares{
+	companyName String,
+    numberOfShares Long
+}
+
+entity EmpPensionContributions{
+	amountPaid Double
+}
+
+entity EmploymentDetails{	
+}
+
+entity BusinessProfit{
+	turnover Double,
+    expenses Double,
+    capitalAllowances Double,
+    profit Double,
+    cisTaxDeducted Double,  
+}
+
+entity Earnings{
+	grossPay Double,
+    taxDeducted Double,
+    studentLoanDeductions Double,
+    
+}
+
+entity Benefits{
+	benefitType BenefitType,
+    description String,
+    value Double
+}
+
+entity Expenses{
+	expenseType ExpenseType,
+    description String,
+    value Double
+}
+
+entity EisInvestments{
+	investmentScheme InvestmentScheme,
+	dateInvested Instant,
+	amountPaid Double }
+
+
+enum InvestmentScheme {
+	EIS, SEIS
+}
+/*TODO: Display Text*/
+enum StudentLoan{
+	NONE, PLAN1, PLAN2
+}
+/*TODO: Fil in*/
+enum ExpenseType{
+	UNSPECIFIED, SUBSCRIPTIONS, MOTOR_EXPENSE_IN_OWN_CAR
+}
+
+/*TODO: Fill in*/
+enum BenefitType{
+	UNSPECIFIED, COMPANY_VAN, FUEL_VAN, PRIVATE_MEDICAL_DENTAL_INSURANCE, COMPANY_CAR, FUEL_CAR 
+}
+
+relationship OneToMany {
+    Client{address} to Address
+    Client{business} to Business
+    Client{PreviousAccountant} to PreviousAccountant
+    Client to TaxReturn
+    Client to BankDetails
+    Client to Shares
+    Client to PensionProvider
+    Client to Employment
+    PreviousAccountant{address} to Address
+	TaxReturn{pensionReceived} to PensionReceived
+    TaxReturn{personalPensionContributions} to PerPensionContributions
+    TaxReturn{giftAidDonations} to GiftAidDonations
+    TaxReturn{bankInterest} to BankInterest    
+    TaxReturn{dividendsReceived} to DividendsReceived
+    TaxReturn{employmentDetails} to EmploymentDetails
+    TaxReturn{EisInvestments} to EisInvestments
+    TaxReturn{BusinessProfit} to BusinessProfit
+    EmploymentDetails{Earnings} to Earnings
+    EmploymentDetails{Benefits} to Benefits
+    EmploymentDetails{Expenses} to Expenses
+    EmploymentDetails{EmploymentPensionContributions} to EmpPensionContributions
+}
+
+relationship OneToOne{
+	TaxReturn{BankRefundDetails} to BankDetails{TaxReturn}
+    TaxReturn{StatePensionDetails} to StatePensionReceived
+    BankInterest{Bankdetails} to BankDetails
+    DividendsReceived{shares} to Shares
+    PensionReceived{PensionProvider} to PensionProvider
+    PerPensionContributions{PensionProvider} to PensionProvider
+    EmploymentDetails{Employment} to Employment
+    BusinessProfit{Business} to Business
+}
+
+
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity BusinessProfit.
+    -->
+    <changeSet id="20190727223305-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="tax_return_id"
+                                 baseTableName="business_profit"
+                                 constraintName="fk_business_profit_tax_return_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="tax_return"/>
+
+        <addForeignKeyConstraint baseColumnNames="business_id"
+                                 baseTableName="business_profit"
+                                 constraintName="fk_business_profit_business_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="business"/>
+
+    </changeSet>
+</databaseChangeLog>

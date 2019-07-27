@@ -1,0 +1,26 @@
+{
+  "accounTalkApp": {
+    "giftAidDonations": {
+      "home": {
+        "title": "Gift Aid Donations",
+        "createLabel": "Create a new Gift Aid Donations",
+        "createOrEditLabel": "Create or edit a Gift Aid Donations",
+        "notFound": "No Gift Aid Donations found"
+      },
+      "created": "A new Gift Aid Donations is created with identifier {{ param }}",
+      "updated": "A Gift Aid Donations is updated with identifier {{ param }}",
+      "deleted": "A Gift Aid Donations is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Gift Aid Donations {{ id }}?"
+      },
+      "detail": {
+        "title": "Gift Aid Donations"
+      },
+      "charityName": "Charity Name",
+      "donationDate": "Donation Date",
+      "donationAmount": "Donation Amount",
+      "giftAidClaimed": "Gift Aid Claimed",
+      "taxReturn": "Tax Return"
+    }
+  }
+}

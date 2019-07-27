@@ -1,0 +1,10 @@
+{
+  "accounTalkApp": {
+    "ExpenseType": {
+      "null": "",
+      "UNSPECIFIED": "UNSPECIFIED",
+      "SUBSCRIPTIONS": "SUBSCRIPTIONS",
+      "MOTOR_EXPENSE_IN_OWN_CAR": "MOTOR_EXPENSE_IN_OWN_CAR"
+    }
+  }
+}

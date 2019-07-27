@@ -1,0 +1,35 @@
+{
+    "name": "PensionProvider",
+    "fields": [
+        {
+            "fieldName": "nameOfProvider",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "membershipNumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "payeReference",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "client",
+            "otherEntityRelationshipName": "pensionProvider",
+            "relationshipName": "client",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190727223254",
+    "entityTableName": "pension_provider",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

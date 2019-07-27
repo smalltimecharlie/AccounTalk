@@ -1,0 +1,35 @@
+{
+    "name": "Business",
+    "fields": [
+        {
+            "fieldName": "businessName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "businessDescription",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "businessType",
+            "fieldType": "BusinessType",
+            "fieldValues": "SOLE_TRADE,PARTNERSHIP,RENTAL_PROPERTY"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "client",
+            "otherEntityName": "client",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190727223252",
+    "entityTableName": "business",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

@@ -1,0 +1,35 @@
+{
+    "name": "Employment",
+    "fields": [
+        {
+            "fieldName": "businessName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "payeReference",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "employmentEndDate",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "client",
+            "otherEntityRelationshipName": "employment",
+            "relationshipName": "client",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190727223250",
+    "entityTableName": "employment",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

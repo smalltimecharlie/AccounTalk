@@ -14,6 +14,48 @@
     <property name="uuidType" value="varchar(36)" dbms="h2, mysql, mariadb"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223248_added_entity_Client.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223249_added_entity_Address.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223250_added_entity_Employment.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223251_added_entity_PreviousAccountant.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223252_added_entity_Business.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223253_added_entity_TaxReturn.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223254_added_entity_PensionProvider.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223255_added_entity_PensionReceived.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223256_added_entity_BankInterest.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223257_added_entity_PerPensionContributions.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223258_added_entity_StatePensionReceived.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223259_added_entity_GiftAidDonations.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223300_added_entity_BankDetails.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223301_added_entity_DividendsReceived.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223302_added_entity_Shares.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223303_added_entity_EmpPensionContributions.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223304_added_entity_EmploymentDetails.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223305_added_entity_BusinessProfit.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223306_added_entity_Earnings.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223307_added_entity_Benefits.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223308_added_entity_Expenses.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223309_added_entity_EisInvestments.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20190727223249_added_entity_constraints_Address.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223250_added_entity_constraints_Employment.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223251_added_entity_constraints_PreviousAccountant.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223252_added_entity_constraints_Business.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223253_added_entity_constraints_TaxReturn.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223254_added_entity_constraints_PensionProvider.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223255_added_entity_constraints_PensionReceived.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223256_added_entity_constraints_BankInterest.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223257_added_entity_constraints_PerPensionContributions.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223259_added_entity_constraints_GiftAidDonations.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223300_added_entity_constraints_BankDetails.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223301_added_entity_constraints_DividendsReceived.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223302_added_entity_constraints_Shares.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223303_added_entity_constraints_EmpPensionContributions.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223304_added_entity_constraints_EmploymentDetails.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223305_added_entity_constraints_BusinessProfit.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223306_added_entity_constraints_Earnings.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223307_added_entity_constraints_Benefits.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223308_added_entity_constraints_Expenses.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20190727223309_added_entity_constraints_EisInvestments.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
 </databaseChangeLog>

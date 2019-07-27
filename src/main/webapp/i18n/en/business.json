@@ -1,0 +1,25 @@
+{
+  "accounTalkApp": {
+    "business": {
+      "home": {
+        "title": "Businesses",
+        "createLabel": "Create a new Business",
+        "createOrEditLabel": "Create or edit a Business",
+        "notFound": "No Business found"
+      },
+      "created": "A new Business is created with identifier {{ param }}",
+      "updated": "A Business is updated with identifier {{ param }}",
+      "deleted": "A Business is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Business {{ id }}?"
+      },
+      "detail": {
+        "title": "Business"
+      },
+      "businessName": "Business Name",
+      "businessDescription": "Business Description",
+      "businessType": "Business Type",
+      "client": "Client"
+    }
+  }
+}

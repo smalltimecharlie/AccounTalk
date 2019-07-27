@@ -1,0 +1,58 @@
+{
+    "name": "BankDetails",
+    "fields": [
+        {
+            "fieldName": "accountHolderName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "accountNumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sortCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "jointAccount",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "bankName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "openingDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "closedDate",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "taxReturn",
+            "otherEntityRelationshipName": "bankRefundDetails",
+            "relationshipName": "taxReturn",
+            "ownerSide": false
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "client",
+            "otherEntityRelationshipName": "bankDetails",
+            "relationshipName": "client",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190727223300",
+    "entityTableName": "bank_details",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

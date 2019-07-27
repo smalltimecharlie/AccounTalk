@@ -1,0 +1,38 @@
+{
+    "name": "GiftAidDonations",
+    "fields": [
+        {
+            "fieldName": "charityName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "donationDate",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "donationAmount",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "giftAidClaimed",
+            "fieldType": "Boolean"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipName": "taxReturn",
+            "otherEntityName": "taxReturn",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20190727223259",
+    "entityTableName": "gift_aid_donations",
+    "dto": "no",
+    "pagination": "no",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

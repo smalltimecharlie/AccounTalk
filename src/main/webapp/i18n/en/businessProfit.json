@@ -1,0 +1,28 @@
+{
+  "accounTalkApp": {
+    "businessProfit": {
+      "home": {
+        "title": "Business Profits",
+        "createLabel": "Create a new Business Profit",
+        "createOrEditLabel": "Create or edit a Business Profit",
+        "notFound": "No Business Profit found"
+      },
+      "created": "A new Business Profit is created with identifier {{ param }}",
+      "updated": "A Business Profit is updated with identifier {{ param }}",
+      "deleted": "A Business Profit is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Business Profit {{ id }}?"
+      },
+      "detail": {
+        "title": "Business Profit"
+      },
+      "turnover": "Turnover",
+      "expenses": "Expenses",
+      "capitalAllowances": "Capital Allowances",
+      "profit": "Profit",
+      "cisTaxDeducted": "Cis Tax Deducted",
+      "taxReturn": "Tax Return",
+      "business": "Business"
+    }
+  }
+}
